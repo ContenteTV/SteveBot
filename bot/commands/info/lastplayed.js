@@ -5,10 +5,10 @@ module.exports = function(bot, db, data) {
 
     if(!mediaInfo.lastMedia || !mediaInfo.lastMedia.currentName)
     {
-        bot.sendChat("I haven't been here for an ending of a song!");
+        bot.sendChat("Eu não estava por aqui!");
     }
     else{
-        bot.sendChat("@" + data.user.username + " The last song played was '" + mediaInfo.lastMedia.currentName + "', and the link is " + mediaInfo.lastMedia.currentLink);
+        bot.sendChat("@" + data.user.username + " A última música tocada foi '" + mediaInfo.lastMedia.currentName + "', e o link é " + mediaInfo.lastMedia.currentLink);
     }
 };
 
