@@ -1,3 +1,3 @@
 module.exports = function(bot, db) {
-    bot.sendChat("I'm still here!");
+    bot.sendChat("Opa, e aí, véééi? Belêza?!");
 };
