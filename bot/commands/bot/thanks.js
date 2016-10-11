@@ -1,3 +1,3 @@
 module.exports = function(bot, db) {
-    bot.sendChat("You're welcome!");
+    bot.sendChat("Um oferecimento G2A!");
 };
