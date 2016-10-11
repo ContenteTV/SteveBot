@@ -13,23 +13,23 @@ module.exports = function(bot, db, data) {
 				            user.hearts = 0;
 				        if(!user.props)
 				            user.props = 0;
-				        bot.sendChat('@' + user.username + ' you have ' + user.hearts + ' heart' + (user.hearts == 1 ? '' : 's')  + 
-				            ' :heart: and ' + user.props + ' tunes :musical_note:!');
+				        bot.sendChat('@' + user.username + ' você possui ' + user.hearts + ' heart' + (user.hearts == 1 ? '' : 's')  + 
+				            ' :heart: e ' + user.props + ' tunes :musical_note:!');
 				    });
             	}
             	else{
 	            	var recipient = bot.getUserByName(data.params[0].replace("@", ""), true);
 
 	                if(!recipient){
-						bot.sendChat('@' + user.username + ', the user ' + data.params[0] + ' was not found!');
+						bot.sendChat('@' + user.username + ', o usuário ' + data.params[0] + ' não foi encontrado!');
 	                } else {
 						repo.findUserById(db, recipient.id, function(user){
 					        if(!user.hearts)
 					            user.hearts = 0;
 					        if(!user.props)
 					            user.props = 0;
-					        bot.sendChat('@' + data.user.username + ', the user @' + user.username + ' has ' + user.hearts + ' heart' + (user.hearts == 1 ? '' : 's')  + 
-					            ' :heart: and ' + user.props + ' tunes :musical_note:!');
+					        bot.sendChat('@' + data.user.username + ', o usuário @' + user.username + ' possui ' + user.hearts + ' heart' + (user.hearts == 1 ? '' : 's')  + 
+					            ' :heart: e ' + user.props + ' tunes :musical_note:!');
 					    });
 	                }	
             	}
@@ -45,8 +45,8 @@ module.exports = function(bot, db, data) {
 	            user.hearts = 0;
 	        if(!user.props)
 	            user.props = 0;
-	        bot.sendChat('@' + user.username + ' you have ' + user.hearts + ' heart' + (user.hearts == 1 ? '' : 's')  + 
-	            ' :heart: and ' + user.props + ' tunes :musical_note:!');
+	        bot.sendChat('@' + user.username + ' você possui ' + user.hearts + ' heart' + (user.hearts == 1 ? '' : 's')  + 
+	            ' :heart: e ' + user.props + ' tunes :musical_note:!');
 	    });
     }
 };
